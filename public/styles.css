@@ -1,0 +1,249 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.pointersEventsNone {
+    pointer-events: none;
+}
+
+.disabled {
+    background: rgb(162, 165, 172) !important;
+}
+
+.disabledDelete{
+    background: rgb(162, 165, 172) !important;
+}
+.active {
+    background: #2B59C3 !important;
+    color: white !important;
+}
+.idCount {
+    display: none;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background:#D8DDEF;
+}
+
+.contenido {
+    background: white;
+    height: 100%;
+    min-height: 100vh;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 20px 30px;
+    
+    background: #2B59C3;
+    color: white;   
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 24px;
+}
+
+.profile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.profile a{
+    text-decoration: none;
+    padding: 5px 20px;
+    background: white;
+    border-radius: 13px;
+    color: #888888;
+}
+
+
+.profile h1{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background: white;
+    margin-left: 30px;
+    color: #888888;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.profile h1:hover{
+    color: #2B59C3;
+    transform: scale(1.1);
+}
+
+
+.fa-power-off {
+    font-size: 14px;
+    margin: auto;
+}
+
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: #888888;
+}
+
+section {
+    padding: 15px;
+}
+
+section.formulario {
+    width: 45%;
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section.formulario label{
+    font-size: 30px;
+}
+
+section.formulario input{
+    height: 40px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+#tituloToDoList {
+    border: none;
+    border-bottom: solid 1px #888888;
+}
+
+#descripcionToDoList {
+    height: 100px;
+}
+
+
+
+#buttonForm {
+    font-size: 20px;
+    width: 100%;
+    background: #D8DDEF;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: grab;
+    margin-top: -15px;
+    color: white;
+    background: #2B59C3;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#buttonForm:hover{
+background: rgb(39, 86, 255);
+transform: scale(1.05);
+    
+
+}
+
+#elements {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+
+}
+
+
+.todoSectionContainer {
+    width: 25%;
+    min-width: 250px;;
+    padding: 15px;
+    margin: 0 auto;
+    transition: all 0.5s ease;}
+    
+.todoSection {
+    border: 1px solid black;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+    height: 300px;
+    position: relative;
+}
+.todoSection:hover {
+    transform: scale(1.05);
+}
+
+.todoSection .title{
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    background: #2B59C3;
+    color: white;
+    font-weight: bold;
+}
+
+.todoSection .description{
+        padding: 15px;
+        flex-flow: row wrap;
+        color: #888888;
+        font-size: 14px;
+
+
+
+}
+.todoSection .button, .updateButton{
+    font-weight: bold;
+    color: #888888;
+    border: none;
+    cursor: grab;
+    margin: 5%;
+    width: 40%;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 12px;
+    transition: all 1s ease;
+
+
+}
+
+.todoSection .button{
+    background: #D8DDEF;
+}
+.todoSection .button:hover{
+    background: rgb(54, 112, 246);
+    color: white;
+}
+
+.todoSection .updateButton{
+}
+.todoSection .updateButton:hover {
+    background: rgb(54, 112, 246);
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}

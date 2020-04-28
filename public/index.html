@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>toDoList</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <div class="contenido">
+    <header>
+      <h1> <i class="fas fa-link"></i> MYTODO </h1>
+      <div class="profile">
+        <a href="">MI PERFIL</a>
+        <h1>
+            <i class="fas fa-power-off"></i>        </h1>
+      </div>
+      
+    </header>
+
+    <section>
+      <h2> ¿Qué tienes que hacer? </h2> 
+    </section>
+    <section class="formulario">
+      <div class="tituloContainer">
+        <input name="titulo" type="text" id="tituloToDoList" required placeholder="Nombre de la tarea">
+      </div>
+      <br>
+      <div class="discripcionContainer">
+        <input name="descripcion" type="text" id="descripcionToDoList"  required placeholder="Descripción de la tarea">
+      </div>
+      <br>
+      <div class="idCount">
+        <label for="id">Id</label>
+        <input id="id" name="id" type="text" id="idToDoList" >
+      </div>
+      <br>
+      <button type="button" id="buttonForm" onclick="sendInfo();">GUARDAR TAREA</button>
+    </section>       
+    <section id="elements">
+    </section>
+  </div>
+        <script>
+          window.onload = function () {
+            var c = document.getElementById("elements").childElementCount;
+            var c = c/3;
+            document.getElementById("id").value = c;
+          }
+        </script>        
+
+      <script src="./index.js"></script>
+</body>
+</html>
